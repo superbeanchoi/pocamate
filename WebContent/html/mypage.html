@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 메타설정값, 반응형일때 PC버전과 모바일버전의 px 비율 사이즈를 똑같게 만들어주는 것 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<link href="../css/startstyle.css" rel="stylesheet" type="text/css">
+<link href="../css/headerstyle.css" rel="stylesheet" type="text/css">
+<link href="../css/mypagestyle.css" rel="stylesheet" type="text/css">
+<link href="../css/popupstyle.css" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="../js/mypagejs.js"></script>
+<title>POCAMATE</title>
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<div id="header">
+				<div class="logo">
+					<a href="../index.html"><img src="../img/pocamate logo.png" alt="logo"/></a>
+				</div>
+				<div class="search clearheader">
+					<label for="searchtext"><img alt="search" src="../img/search icon.png"/></label>
+					<input type="text" placeholder="원하는 포토카드를 검색하세요" id="searchtext" class="searchtext"/>
+				</div>
+				<nav class="navi">
+					<ul class="mainNavi">
+	 					<li><a href="pocasearch.html">포카 검색</a></li>
+	 					<div class="menubar"></div>
+						<li><a href="pocarank.html">시세 확인</a></li>
+	 					<div class="menubar"></div>
+						<li><a href="duckmate.html">덕 메이트</a></li>
+					</ul>
+					<ul class="loginNavi">
+						<li class="loginbtn clearheader"><button>로그인</button></li>
+						<li class="newmembtn clearheader"><button>회원가입</button></li>
+						<li class="nickname"><span>잘생긴 토마토</span></li>
+						<li class="sir"><span>님</span></li>
+						<li class="profilebtn"><a href="mypage.html"><img alt="profile" src="../img/profile icon.png"/></a></li>
+					</ul>
+				</nav>
+			</div> <!-- header -->
+		</header>
+		
+		<div class="contents">
+			<div class="profileArea">
+				<img src="../img/profile icon.png" class="profileImg"/>
+				<span>잘생긴 토마토</span>
+				<button><img src="../img/setting icon.png"/></button>
+			</div>
+			<div class="mypagebar"></div>
+			<div class="payArea">
+				<img src="../img/wallet icon.png" class="walletImg"/>
+				<span>POCAMATE PAY</span>
+				<span class="pay">10,000 원</span>
+				<button><img src="../img/arrow icon.png"/></button>
+			</div>
+			<div class="mypagebar"></div>
+			<div class="collectionArea">
+				<div class="collectionTitle">
+					<img src="../img/my collection on icon.png"/>
+					<span>마이 컬렉션</span>
+					<button><img src="../img/arrow icon.png"/></button>
+				</div>
+				<ul class="collectionpoca">
+					<li><img src="../img/bts v img.png"/></li>
+					<li><img src="../img/lesserafim img.png"/></li>
+					<li><img src="../img/newjeans img.png"/></li>
+					<li><button>+</button></li>
+				</ul>
+			</div>
+			<div class="mypagebar"></div>
+			<div class="shopingArea">
+				<div class="shopingTitle">
+					<img src="../img/buying icon.png"/>
+					<span>구매</span>
+				</div>
+				<div class="shoping">
+					<ul>
+						<li>매칭중</li>
+						<li>2</li>
+					</ul>
+					<div></div>
+					<ul>
+						<li>매칭 완료</li>
+						<li>0</li>
+					</ul>
+					<div></div>
+					<ul>
+						<li>거래 완료</li>
+						<li>2</li>
+					</ul>
+				</div>
+			</div>
+			<div class="mypagebar"></div>
+			<div class="shopingArea">
+				<div class="shopingTitle">
+					<img src="../img/selling icon.png"/>
+					<span>판매</span>
+				</div>
+				<div class="shoping selling">
+					<ul>
+						<li>매칭중</li>
+						<li>0</li>
+					</ul>
+					<div></div>
+					<ul>
+						<li>매칭 완료</li>
+						<li>3</li>
+					</ul>
+					<div></div>
+					<ul>
+						<li>거래 완료</li>
+						<li>2</li>
+					</ul>
+				</div>
+			</div>
+			<div class="mypagebar"></div>
+		</div> <!-- contents -->
+		<div class="popupBg">
+			<div class="comingSoonWrap popupWrap">
+				<div class="comingSooTitle popupTitle">COMING SOON</div>
+				<div class="popupBtnArea popupOneBtnArea">
+					<button class="cancellBtn popupBtn">확인</button>
+				</div>
+			</div> <!-- comingSoon -->
+		</div> <!-- popupBg -->
+		<footer></footer>
+	</div> <!-- wrap -->
+</body>
+</html>

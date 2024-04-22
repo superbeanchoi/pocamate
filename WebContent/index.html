@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 메타설정값, 반응형일때 PC버전과 모바일버전의 px 비율 사이즈를 똑같게 만들어주는 것 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<link href="css/startstyle.css" rel="stylesheet" type="text/css">
+<link href="css/headerstyle.css" rel="stylesheet" type="text/css">
+<link href="css/indexstyle.css" rel="stylesheet" type="text/css">
+<link href="css/loginstyle.css" rel="stylesheet" type="text/css">
+<link href="css/popupstyle.css" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="js/indexjs.js"></script>
+<script src="js/pocadetailOpenforIndexjs.js"></script>
+<title>POCAMATE</title>
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<div id="header">
+				<div class="logo">
+					<a href="index.html"><img src="img/pocamate logo.png" alt="logo"/></a>
+				</div>
+				<div class="search">
+					<label for="searchtext"><img alt="search" src="img/search icon.png"/></label>
+					<input type="text" placeholder="원하는 포토카드를 검색하세요" id="searchtext" class="searchtext"/>
+				</div>
+				<nav class="navi">
+					<ul class="mainNavi">
+	 					<li><a href="html/pocasearch.html">포카 검색</a></li>
+	 					<div class="menubar"></div>
+						<li><a href="html/pocarank.html">시세 확인</a></li>
+	 					<div class="menubar"></div>
+						<li><a href="html/duckmate.html">덕 메이트</a></li>
+					</ul>
+					<ul class="loginNavi">
+						<li class="loginbtn"><button>로그인</button></li>
+						<li class="newmembtn"><button>회원가입</button></li>
+						<li class="nickname clearheader"><span>잘생긴 토마토</span></li>
+						<li class="sir clearheader"><span>님</span></li>
+						<li class="profilebtn clearheader"><a href="html/mypage.html"><img alt="profile" src="img/profile icon.png"/></a></li>
+					</ul>
+				</nav>
+			</div> <!-- header -->
+		</header>
+		<div class="mainvideoArea">
+			<video autoplay loop muted><source src="video/index main video.mp4" type="video/mp4"/></video>
+			<div class="mainvideoText">
+				<img src="img/big pocamate logo.png"/>
+				<span>나의 최애 포카를 가장 쉽고 빠르게 만나는 방법</span>
+				<div class="btnContents">
+					<button>
+						<div>
+							<img alt="포토카드 구매 가이드" src="img/photocard buyingguide.png" class="guideicon"/>
+							<span>포토카드 구매가이드</span>
+						</div>
+					</button>
+					<button>
+						<div>
+							<img alt="포토카드 판매하기" src="img/photocard sel.png" class="guideicon"/>
+							<span>포토카드 판매하기</span>
+						</div>
+					</button>
+				</div>
+			</div>
+		</div> <!-- mainvideoArea -->
+		<div class="contents">
+			<div class="pocaContents">
+				<div class="areaTitle">
+					<span class="bigTitle">오늘의 🔥HOT POCA🔥</span>
+					<span class="smallTitle">POCAMATE에서 가장 인기있는 오늘의 포카는 누구?🔥</span>
+				</div> 
+				<button class="pocaSearchOpenBtn pageOpenBtn">
+					전체 POCA 보러가기
+					<img alt="HOT POCA 전체보기" src="img/arrow icon.png"/>
+				</button> 
+				<div class="pocaSlide">
+					<ul>
+						<li class="active"><a href="#">
+							<img alt="LE SSERAFIM 허윤진 포토카드" src="img/lesserafim img.png" class="photocard"/>
+							<div class="singerinfo">
+								<img alt="LE SSERAFIM 로고" src="img/lesserafim logo.png" class="singerlogo"/>
+								<span>LE SSERAFIM</span>
+								<span>허윤진</span>
+							</div>
+							<div class="singeramount">
+								<span>즉시 거래가</span>
+								<span class="buyNowPrice">50,000 원</span>
+							</div>
+						</a></li>
+						<li><a href="#">
+							<img alt="SEVENTEEN 정한 포토카드" src="img/seventeen img.png" class="photocard"/>
+							<div class="singerinfo">
+								<img alt="SEVENTEEN 로고" src="img/seventeen logo.png" class="singerlogo"/>
+								<span>SEVENTEEN</span>
+								<span>정한</span>
+							</div>
+							<div class="singeramount">
+								<span>즉시 거래가</span>
+								<span class="buyNowPrice">70,000 원</span>
+							</div>
+						</a></li>
+						<li><a href="#">
+							<img alt="아이유 포토카드" src="img/iu img.png" class="photocard"/>
+							<div class="singerinfo">
+								<img alt="아이유 로고" src="img/iu logo.png" class="singerlogo"/>
+								<span>IU</span>
+								<span>아이유</span>
+							</div>
+							<div class="singeramount">
+								<span>즉시 거래가</span>
+								<span class="buyNowPrice">25,000 원</span>
+							</div>
+						</a></li>
+						<li><a href="#">
+							<img alt="ASTRO 차은우 포토카드" src="img/astro img.png" class="photocard"/>
+							<div class="singerinfo">
+								<img alt="ASTRO 로고" src="img/astro logo.png" class="singerlogo"/>
+								<span>ASTRO</span>
+								<span>차은우</span>
+							</div>
+							<div class="singeramount">
+								<span>즉시 거래가</span>
+								<span class="buyNowPrice">30,000 원</span>
+							</div>
+						</a></li>
+						<li><a href="#">
+							<img alt="NCT 태용 포토카드" src="img/nct img.png" class="photocard"/>
+							<div class="singerinfo">
+								<img alt="NCT 로고" src="img/nct logo.png" class="singerlogo"/>
+								<span>NCT</span>
+								<span>태용</span>
+							</div>
+							<div class="singeramount">
+								<span>즉시 거래가</span>
+								<span class="buyNowPrice">45,000 원</span>
+							</div>
+						</a></li>
+						<li><a href="#">
+							<img alt="NewJeans 하니 포토카드" src="img/newjeans img.png" class="photocard"/>
+							<div class="singerinfo">
+								<img alt="NewJeans 로고" src="img/newjeans logo.png" class="singerlogo"/>
+								<span>NewJeans</span>
+								<span>하니</span>
+							</div>
+							<div class="singeramount">
+								<span>즉시 거래가</span>
+								<span class="buyNowPrice">15,000 원</span>
+							</div>
+						</a></li>
+						<li><a href="#">
+							<img alt="BTS 뷔 포토카드" src="img/bts v img.png" class="photocard"/>
+							<div class="singerinfo">
+								<img alt="BTS 로고" src="img/bts logo.png" class="singerlogo"/>
+								<span>BTS</span>
+								<span class="buyNowPrice">뷔</span>
+							</div>
+							<div class="singeramount">
+								<span>즉시 거래가</span>  
+								<span class="buyNowPrice">90,000 원</span>
+							</div>
+						</a></li>
+						<li><a href="#">
+							<img alt="IVE 장원영 포토카드" src="img/ive img.png" class="photocard"/>
+							<div class="singerinfo">
+								<img alt="IVE 로고" src="img/ive logo.png" class="singerlogo"/>
+								<span>IVE</span>
+								<span>장원영</span>
+							</div>
+							<div class="singeramount">
+								<span>즉시 거래가</span>
+								<span class="buyNowPrice">20,000 원</span>
+							</div>
+						</a></li>
+					</ul>
+				</div> <!-- pocaSlide -->
+			</div> <!-- pocaContents -->
+			<div class="marketContents">
+				<button class="pocarankOpenBtn">
+					<div>
+						<span>이번주 최고 금액 포카는? 👀</span>
+						<span>이번주 포카 시세 확인하기</span>
+					</div>
+					<img alt="이번주 포카 시세 확인하기" src="img/marketcontent img.png"/>
+				</button>
+			</div> <!-- marketContents -->
+			<!-- 
+			<div class="pocaContents">
+				<div class="areaTitle">
+					<span class="bigTitle">신규 업데이트 POCA 🔔</span>
+					<span class="smallTitle">오늘은 어떤 포카가?🤔 따끈따끈한 신상 포토카드 구경하기</span>
+				</div>
+				<button>
+					신규 POCA 전체보기
+					<img alt="신규 POCA 전체보기" src="img/arrow icon.png"/>
+				</button> 
+				<div class="pocaSlide">
+					<ul>
+						<li><a href="#">
+							<img alt="BTS 뷔 포토카드" src="img/bts v img.png" class="photocard"/>
+							<div class="singerinfo">
+								<img alt="BTS 로고" src="img/bts logo.png" class="singerlogo"/>
+								<span>BTS</span>
+								<span>뷔</span>
+							</div>
+							<div class="singeramount">
+								<span>즉시 거래가</span>
+								<span>95,000 원</span>
+							</div>
+						</a></li>
+						<li><a href="#">
+							<img alt="Red Velvet 아이린 포토카드" src="img/redvelvet img.png" class="photocard"/>
+							<div class="singerinfo">
+								<img alt="Red Velvet 로고" src="img/redvelvet logo.png" class="singerlogo"/>
+								<span>Red Velvet</span>
+								<span>아이린</span>
+							</div>
+							<div class="singeramount">
+								<span>즉시 거래가</span>
+								<span>20,000 원</span>
+							</div>
+						</a></li>
+						<li><a href="#">
+							<img alt="IVE 장원영 포토카드" src="img/ive img.png" class="photocard"/>
+							<div class="singerinfo">
+								<img alt="IVE 로고" src="img/ive logo.png" class="singerlogo"/>
+								<span>IVE</span>
+								<span>장원영</span>
+							</div>
+							<div class="singeramount">
+								<span>즉시 거래가</span>
+								<span>30,000 원</span>
+							</div>
+						</a></li>
+						<li><a href="#">
+							<img alt="BTS 정국 포토카드" src="img/bts jk img.png" class="photocard"/>
+							<div class="singerinfo">
+								<img alt="BTS 로고" src="img/bts logo.png" class="singerlogo"/>
+								<span>BTS</span>
+								<span>정국</span>
+							</div>
+							<div class="singeramount">
+								<span>즉시 거래가</span>
+								<span>50,000 원</span>
+							</div>
+						</a></li>
+						<li><a href="#">
+							<img alt="aespa 카리나 포토카드" src="img/aespa img.png" class="photocard"/>
+							<div class="singerinfo">
+								<img alt="aespa 로고" src="img/aespa logo.png" class="singerlogo"/>
+								<span>aespa</span>
+								<span>카리나</span>
+							</div>
+							<div class="singeramount">
+								<span>즉시 거래가</span>
+								<span>15,000 원</span>
+							</div>
+						</a></li>
+						<li><a href="#">
+							<img alt="EXO 백현 포토카드" src="img/exo img.png" class="photocard"/>
+							<div class="singerinfo">
+								<img alt="EXO 로고" src="img/exo logo.png" class="singerlogo"/>
+								<span>EXO</span>
+								<span>백현</span>
+							</div>
+							<div class="singeramount">
+								<span>즉시 거래가</span>
+								<span>30,000 원</span>
+							</div>
+						</a></li>
+						<li><a href="#">
+							<img alt="LE SSERAFIM 허윤진 포토카드" src="img/lesserafim img.png" class="photocard"/>
+							<div class="singerinfo">
+								<img alt="LE SSERAFIM 로고" src="img/lesserafim logo.png" class="singerlogo"/>
+								<span>LE SSERAFIM</span>
+								<span>허윤진</span>
+							</div>
+							<div class="singeramount">
+								<span>즉시 거래가</span>  
+								<span>30,000 원</span>
+							</div>
+						</a></li>
+						<li><a href="#">
+							<img alt="ASTRO 차은우 포토카드" src="img/astro img.png" class="photocard"/>
+							<div class="singerinfo">
+								<img alt="ASTRO 로고" src="img/astro logo.png" class="singerlogo"/>
+								<span>ASTRO</span>
+								<span>차은우</span>
+							</div>
+							<div class="singeramount">
+								<span>즉시 거래가</span>
+								<span>50,000 원</span>
+							</div>
+						</a></li>
+					</ul>
+				</div> 
+			</div>
+			 -->
+			<div class="pocaContents">
+				<div class="areaTitle">
+					<span class="bigTitle">오늘의 덕 메이트 TALK 🥳</span>
+					<span class="smallTitle">슬기롭고 재미있는 덕질생활⭐️</span>
+				</div>
+				<button class="duckMateOpenBtn pageOpenBtn">
+					DUCK TALK 전체보기
+					<img alt="덕메 TALK 전체보기" src="img/arrow icon.png"/>
+				</button> 
+				<div class="talkArea">
+					<div class="postArea"><a href="html/duckmatepost.html">
+						<div class="post">
+							<div>IVE</div>
+							<div>오늘 인가 원영이 너무 이뻤다ㅠㅠ</div>
+							<div>고양이 모자 너무 귀여웠는데 혹시 사진 ...</div>
+						</div>
+						<div class="postImg"></div>
+					</a></div>
+					<div class="singerArea">
+						<div class="singer">
+							<img alt="IVE 로고" src="img/ive logo.png" class="singerlogo"/>
+							<span>IVE</span>
+						</div>
+						<div class="singer">
+							<img alt="aespa 로고" src="img/aespa logo.png" class="singerlogo"/>
+							<span>aespa</span>
+						</div>
+						<div class="singer">
+							<img alt="NCT 로고" src="img/nct logo.png" class="singerlogo"/>
+							<span>NCT</span>
+						</div>
+						<div class="singer">
+							<img alt="BTS 로고" src="img/bts logo.png" class="singerlogo"/>
+							<span>BTS</span>
+						</div>
+						<div class="singer">
+							<img alt="EXO 로고" src="img/exo logo.png" class="singerlogo"/>
+							<span>EXO</span>
+						</div>
+						<div class="singer">
+							<img alt="ASTRO 로고" src="img/astro logo.png" class="singerlogo"/>
+							<span>ASTRO</span>
+						</div>
+					</div>
+				</div> <!-- talkArea -->
+			</div> <!-- pocaContents -->
+		</div> <!-- contents -->
+		<div class="loginPopupBg">
+			<div class="loginPopupWrap">
+				<button class="loginCloseBtn">X</button>
+				<div class="loginTitle">로그인</div>
+				<form action="#" class="loginForm">
+					<ul class="loginInfo">
+						<li>
+							<label for="emailtext">이메일</label>
+							<div class="loginbox">
+								<input id="emailtext" type="text" required="required" autofocus="autofocus" placeholder="example@pocamate.com"/>
+							</div>
+						</li>
+						<li>
+							<label for="pwtext">비밀번호</label>
+							<div class="loginbox">
+								<input id="pwtext" type="password" required="required" placeholder="비밀번호를 입력해주세요"/>
+							</div>
+						</li>
+					</ul>
+					<button class="loginBtn">로그인</button>
+					<ul class="loginMore">
+						<li><a href="#">비밀번호 찾기</a></li>
+						<li class="bar"></li>
+						<li><a href="#">회원가입</a></li>
+					</ul>
+				</form> <!-- loginForm -->
+			</div> <!-- loginPopupWrap -->
+		</div> <!-- loginPopupBg -->
+		<div class="popupBg">
+			<div class="comingSoonWrap popupWrap">
+				<div class="comingSooTitle popupTitle">COMING SOON</div>
+				<div class="popupBtnArea popupOneBtnArea">
+					<button class="cancellBtn popupBtn">확인</button>
+				</div>
+			</div> <!-- comingSoon -->
+		</div> <!-- popupBg -->
+		<footer></footer>
+		
+	</div> <!-- wrap -->
+</body>
+</html>

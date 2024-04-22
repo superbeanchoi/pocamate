@@ -1,0 +1,319 @@
+@charset "UTF-8";
+
+/* layout */
+
+/* 헤더 */
+
+/* wrap */
+.wrap {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+/* 메인 콘텐츠 */
+.contents {
+/* 	background-color: #ccc; */
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 100px;
+	flex-grow: 1;
+	padding-bottom: 140px;
+}
+
+/* 게시글 제목 영역 */
+.postCategory {
+	width: 410px;
+	height: 40px;
+	margin-top: 70px;
+}
+.postCategory span, .postCategory img {
+	display: block;
+	float: left;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 40px;
+}
+.postCategory span:first-child{
+	width: 140px;
+	height: 40px;
+	color: #999;
+}
+.postCategoryArrow {
+	width: 20px;
+	height: 20px;
+	margin: 10px 0;
+}
+.postCategorySingerImg {
+	width: 40px;
+	height: 40px;
+	margin: 0 20px;
+}
+.postCategorySinger {
+	width: 170px;
+	height: 40px;
+}
+.postTitle {
+	width: 1000px;
+	height: 50px;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 50px;
+	margin-top: 40px;
+}
+.postwriterArea {
+	width: 1000px;
+	height: 50px;
+	margin-top: 40px;
+}
+.postwriterProfile {
+	width: 40px;
+	height: 40px;
+	display: block;
+	float: left;
+	margin: 5px 20px 5px 10px;
+}
+.postwriterArea span {
+	width: 170px;
+	height: 50px;
+	display: block;
+	float: left;
+	font-size: 22px;
+	line-height: 50px;
+}
+.postwriterNickname {
+	font-weight: 700;
+}
+.minpostbar {
+	width: 1px;
+	height: 20px;
+	float: left;
+	background-color: #999;
+	margin: 15px 0;
+}
+.postDate {
+	color: #999;
+	margin-left: 40px;
+}
+.submenu {
+	width: 50px;
+	height: 50px;
+	float: right;
+}
+.postbar {
+	width: 1000px;
+	height: 2px;
+	background-color: #8AAAE5;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+/* 게시글 본문 영역 */
+.postMainImg, .postMainImg img {
+	width: 900px;
+	height: auto;
+	margin: 0 auto;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.postContent {
+	width: 1000px;
+	margin-top: 80px;
+	font-size: 22px;
+	line-height: 1.5;
+	padding: 0 10px 70px;
+}
+.postEtc {
+	width: 320px;
+	height: 40px;
+}
+.postEtc img, .postEtc button {
+	width: 40px;
+	height: 40px;
+	display: block;
+	float: left;
+}
+.postEtc span {
+	width: 100px;
+	height: 40px;
+	display: block;
+	float: left;
+	margin-left: 20px;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 40px;
+	color: #999;
+}
+
+/* 게시글 댓글 영역 */
+.myComment {
+	width: 1000px;
+	height: 150px;
+	border: 5px solid #8AAAE5;
+	border-radius: 10px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+.writterProfile {
+	width: 235px;
+	height: 40px;
+	float: left;
+}
+.writterProfile img {
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.writterProfile span {
+	width: 170px;
+	height: 40px;
+	float: left;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 40px;
+	margin-left: 25px;
+}
+.myCommentText {
+	width: 620px;
+	height: 100px;
+	font-size: 22px;
+	text-align: left;
+	vertical-align: top;
+	line-height: 1.5;
+	border-radius: 10px;
+	padding:5px;
+	resize: none;
+}
+.myCommentText:focus {
+	outline: 2px solid #8AAAE5;
+	cursor: text;
+}
+.myCommentBtn {
+	width: 70px;
+	height: 50px;
+	display: block;
+	float: right;
+	background-color: #8AAAE5;
+	color: #fff;
+	font-weight: 700;
+	border-radius: 10px;
+	transition: background-color 0.2s ease, border 0.2s ease, color 0.2s ease;
+	
+}
+.myCommentBtn:hover {
+	border: 2px solid #8AAAE5;
+	background-color: #fff;
+	color: #222;
+}
+.postComment {
+	width: 1000px;
+	height: auto;
+	padding: 20px 0;
+}
+.commentWritterArea {
+	width: 1000px;
+	height: 40px;
+}
+.commentDate {
+	width: 200px;
+	height: 40px;
+	display: block;
+	float: left;
+	margin-left: 510px;
+	line-height: 40px;
+	color: #999;
+	text-align: right;
+}
+.commentsubmenu, .commentsubmenu img {
+	width: 40px;
+	height: 40px;
+	float: right;
+}
+.postCommentText {
+	width: 880px;
+	margin-top: 20px;
+	margin-left: 65px;
+	line-height: 1.5;
+}
+
+/* 댓글메뉴 팝업 */
+.commentDetailtBtn {
+	width: 200px;
+	height: 50px;
+	background-color: #fff;
+	border: 2px solid #8AAAE5;
+	font-weight: 700;
+	font-size: 18px;
+}
+.postComment {
+	position: relative;
+}
+.commentDetailtBtn {
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+}
+.commentReportgoBtn {
+	display: none;
+}
+.commentDeletegoBtn {
+	display: none;
+}
+
+/* 부모 페이지로부터 넘겨받을 데이터 영역 */
+#postCategorySingerValue {
+	width: 170px;
+	height: 40px;
+	display: block;
+	float: left;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 40px;
+}
+#postTitleValue {
+	width: 1000px;
+	height: 50px;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 50px;
+	overflow-wrap: break-word;
+	resize: none;
+}
+#postDateValue {
+	width: 170px;
+	height: 50px;
+	display: block;
+	float: left;
+	font-size: 22px;
+	line-height: 50px;
+}
+
+#postTitleValue:disabled, #postCategorySingerValue:disabled {
+	background-color: #fff;
+	color: #222;
+}
+#postDateValue:disabled {
+	background-color: #fff;
+	color: #999;
+}
+#postTitleValue:focus, #postTitleValue:hover,
+#postDateValue:focus, #postDateValue:hover {
+	outline: none;
+	cursor: default;
+}
+
+/* 신고 */
+.report .commentWritterArea .writterProfile span, .report .postCommentText {
+	color: #999;
+	text-decoration: line-through;
+	font-style: italic;
+}
+
+/* 푸터 */
+footer {
+	width: 100%;
+	height: 200px;
+	background-color: #8AAAE5;
+}

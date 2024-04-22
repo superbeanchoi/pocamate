@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 메타설정값, 반응형일때 PC버전과 모바일버전의 px 비율 사이즈를 똑같게 만들어주는 것 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<link href="../css/startstyle.css" rel="stylesheet" type="text/css">
+<link href="../css/headerstyle.css" rel="stylesheet" type="text/css">
+<link href="../css/duckmatestyle.css" rel="stylesheet" type="text/css">
+<link href="../css/popupstyle.css" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="../js/duckmatejs.js"></script>
+<script src="../js/duckmatepostOpenjs.js"></script>
+<title>POCAMATE</title>
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<div id="header">
+				<div class="logo">
+					<a href="../index.html"><img src="../img/pocamate logo.png" alt="logo"/></a>
+				</div>
+				<div class="search clearheader">
+					<label for="searchtext"><img alt="search" src="../img/search icon.png"/></label>
+					<input type="text" placeholder="원하는 포토카드를 검색하세요" id="searchtext" class="searchtext"/>
+				</div>
+				<nav class="navi">
+					<ul class="mainNavi">
+	 					<li><a href="pocasearch.html">포카 검색</a></li>
+	 					<div class="menubar"></div>
+						<li><a href="pocarank.html">시세 확인</a></li>
+	 					<div class="menubar"></div>
+						<li><a href="duckmate.html">덕 메이트</a></li>
+					</ul>
+					<ul class="loginNavi">
+						<li class="loginbtn clearheader"><button>로그인</button></li>
+						<li class="newmembtn clearheader"><button>회원가입</button></li>
+						<li class="nickname"><span>잘생긴 토마토</span></li>
+						<li class="sir"><span>님</span></li>
+						<li class="profilebtn"><a href="mypage.html"><img alt="profile" src="../img/profile icon.png"/></a></li>
+					</ul>
+				</nav>
+			</div> <!-- header -->
+		</header>
+		<div class="topMain">
+				전세계 K-POP 팬들과 소통하는<br/>즐거운 덕질 공간, 최고의 덕질 메이트
+		</div> <!-- topMain -->
+		<div class="contents">
+			<div class="duckmateTitleArea">
+				<span>📣 덕 메이트 TALK  📣</span>
+				<button>TALK 작성하기</button>
+			</div> <!-- duckmateTitleArea -->
+			<div class="duckmate">
+				<div class="duckmateStarArea">
+					<div class="starsearch">
+						<label for="starsearchtext"><img alt="search" src="../img/search icon.png"/></label>
+						<input type="text" placeholder="스타 검색" id="starsearchtext" class="starsearchtext"/>
+					</div>
+					<div class="duckmateStarAll duckmateStarlogo">
+						<button><img src="../img/allshow icon.png"/><span>전체보기</span></button>
+					</div>
+					<button class="starmoveup"><img src="../img/minup move off icon.png"></button>
+					<div class="duckmateStarlogo">
+						<ul>
+							<li><button><img src="../img/astro logo.png"/><span>ASTRO</span></button></li>
+							<li><button><img src="../img/aespa logo.png"/><span>aespa</span></button></li>
+							<li><button><img src="../img/exo logo.png"/><span>EXO</span></button></li>
+							<li><button><img src="../img/iu logo.png"/><span>IU</span></button></li>
+							<li><button><img src="../img/ive logo.png"/><span>IVE</span></button></li>
+							<li><button><img src="../img/lesserafim logo.png"/><span>LE SSERAFIM</span></button></li>
+							<li><button><img src="../img/nct logo.png"/><span>NCT</span></button></li>
+							<li><button><img src="../img/newjeans logo.png"/><span>NewJeans</span></button></li>
+							<li><button><img src="../img/redvelvet logo.png"/><span>Red Velvet</span></button></li>
+							<li><button><img src="../img/seventeen logo.png"/><span>SEVENTEEN</span></button></li>
+						</ul>
+					</div>
+					<button class="starmovedown"><img src="../img/mindown move off icon.png"></button>
+				</div> <!-- duckmateStarArea -->
+				<div class="duckmatePostArea">
+					<div class="duckmatePost eachPost ivePost">
+						<a href="#"><table>
+							<tr>
+								<td colspan="2" class="postCategory">IVE</td>
+								<td rowspan="3" class="postImg"><div class="img"><img src="../img/post main img.png" class="postImgArea"/></div></td>
+							</tr>
+							<tr>
+								<td colspan="2" class="postTitle">오늘 인기가요 원영이 너무 이뻤다ㅠㅠ</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="postContents">
+									<div>
+										고양이 모자 너무 귀여웠는데 혹시 사진 더 줄 수 있는 사람?!
+										이번 앨범 헤어 진짜 다양해서 너무 행복해ㅠ
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="postEtc postLike"><img src="../img/my collection off icon.png">3</td>
+								<td class="postEtc"><img src="../img/comment icon.png">1</td>
+								<td class="postEtc postDate">2024-02-04</td>
+							</tr>
+						</table></a>
+					</div>
+					<div class="duckmatePost eachPost astroPost">
+						<a href="#"><table>
+							<tr>
+								<td colspan="2" class="postCategory">ASTRO</td>
+								<td rowspan="3" class="postImg"><div class="img"><img src="../img/astro img.png" class="postImgArea"/></div></td>
+							</tr>
+							<tr>
+								<td colspan="2" class="postTitle">혹시 이거 무슨 포카인지 아는 사람?</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="postContents">
+									<div>
+										방송일 하는 친구가 나 준다는데 무슨 포카인지 써치해도 찾기가 힘들어서ㅠㅠ
+										나름 희귀 포카라고만 들었는데 알려줄 수 있는사람?
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="postEtc postLike"><img src="../img/my collection off icon.png">2</td>
+								<td class="postEtc"><img src="../img/comment icon.png">1</td>
+								<td class="postEtc postDate">2024-02-03</td>
+							</tr>
+						</table></a>
+					</div>
+					<div class="duckmatePost eachPost aespaPost">
+						<a href="#"><table>
+							<tr>
+								<td colspan="2" class="postCategory">aespa</td>
+								<td rowspan="3" class="postImg"><div class="img"><img src="../img/aespa post.png" class="postImgArea"/></div></td>
+							</tr>
+							<tr>
+								<td colspan="2" class="postTitle">헐 테니스 포카 미쳤는데?</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="postContents">
+									<div>
+										아기 족제비ㅠㅠㅠㅠㅠ 존예잖아ㅠㅠㅠㅠㅠ 바로 구매 갈긴다
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="postEtc postLike"><img src="../img/my collection off icon.png">6</td>
+								<td class="postEtc"><img src="../img/comment icon.png">1</td>
+								<td class="postEtc postDate">2024-02-02</td>
+							</tr>
+						</table></a>
+					</div>
+					<div class="duckmatePost eachPost exoPost">
+						<a href="#"><table>
+							<tr>
+								<td colspan="2" class="postCategory">EXO</td>
+								<td rowspan="3" class="postImg"><div class="img"><img src="../img/exo post.png" class="postImgArea"/></div></td>
+							</tr>
+							<tr>
+								<td colspan="2" class="postTitle">종인이 독일 잘 다녀와💛</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="postContents">
+									<div>
+										5월 14일 독일 프랑크푸르트 케이팝플랙스콘 참가 확정이네
+										얼마만에 오프라인 무대야 ㅠ.ㅠ 솔로 첫 야외무대 아니냐ㅠㅠㅠㅠㅠㅠㅠㅠ
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="postEtc postLike"><img src="../img/my collection off icon.png">4</td>
+								<td class="postEtc"><img src="../img/comment icon.png">1</td>
+								<td class="postEtc postDate">2024-02-01</td>
+							</tr>
+						</table></a>
+					</div>
+					<div class="eachPost elsePost">관련 게시물이 존재하지 않습니다.</div>
+					<button class="eachPost postDown"><img src="../img/down move off icon.png"/></button>
+				</div> <!-- duckmatePostArea -->
+			</div> <!-- duckmate -->
+		</div> <!-- contents -->
+		<div class="popupBg">
+			<div class="comingSoonWrap popupWrap">
+				<div class="comingSooTitle popupTitle">COMING SOON</div>
+				<div class="popupBtnArea popupOneBtnArea">
+					<button class="cancellBtn popupBtn">확인</button>
+				</div>
+			</div> <!-- comingSoon -->
+		</div> <!-- popupBg -->
+		<footer></footer>
+	</div> <!-- wrap -->
+</body>
+</html>

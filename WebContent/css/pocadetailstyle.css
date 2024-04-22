@@ -1,0 +1,287 @@
+@charset "UTF-8";
+
+/* layout */
+
+/* 헤더 */
+
+/* wrap */
+.wrap {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+/* 메인 콘텐츠 */
+.contents {
+/* 	background-color: #aeaeae; */
+	width: 1100px;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 100px;
+	flex-grow: 1;
+	padding-bottom: 140px;
+}
+
+/* 포카 이미지 영역 */
+.pocasimpleinfo {
+	float:left;
+	width: 510px;
+	height: auto;
+	margin-top: 100px;
+}
+.pocaArea {
+	width: 510px;
+	height: 400px;
+	background-color: #fff;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	padding-top: 25px;
+}
+.pocaArea img {
+	display: block;
+	width: 250px;
+	height: 350px;
+	border-radius: 25px;
+	margin: 0 auto;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.myCollection {
+	width: 470px;
+	height: 30px;
+	margin-top: 30px;
+}
+.myCollection button, .myCollection img {
+	width: 30px;
+	height: 30px;
+}
+.myCollection span {
+	width: 420px;
+	height: 30px;
+	font-size: 22px;
+	font-weight: 700;
+	margin-left: 20px;
+	cursor: default;
+}
+.seller {
+	width: 510px;
+	height: 40px;
+	margin-top: 30px;
+}
+.seller>span {
+	display: block;
+	width: 120px;
+	height: 40px;
+	float: left;
+	font-size: 18px;
+	font-weight: 700;
+	line-height:40px;
+	color: #999;
+	cursor: default;
+}
+.talk>span {
+	margin-top: 5px;
+}
+.seller div:last-child {
+	width: 369px;
+	float: right;
+}
+.seller div img {
+	width: 40px;
+	height: 40px;
+	line-height:40px;
+}
+.seller div>span {
+	width: 299px;
+	height: 40px;
+	margin-left: 20px;
+	font-size: 22px;
+	font-weight: 700;
+	cursor: default;
+}
+.seller div:last-child {
+	margin-left: 20px;
+	width: 369px;
+	height: 80px;
+	line-height: 1.5;
+}
+
+/* 포카 판매 영역 */
+.pocabuyingInfo {
+	width: 510px;
+	height: auto;
+	float: right;
+	margin-top: 100px;
+}
+.pocabuyingInfo>img {
+	width: 120px;
+	height: 40px;
+	border-radius: 10px;
+}
+.pocaTitle {
+	width: 510px;
+	height: 80px;
+	display: block;
+	margin-top: 20px;
+	font-size: 30px;
+	font-weight: 700;
+}
+.singerInfo {
+	width: 360px;
+	height: 60px;
+	margin-top: 20px;
+}
+.singerInfo img {
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	float: left;
+}
+.singerInfo span {
+	display: block;
+	width: 130px;
+	height: 30px;
+	float: left;
+	margin-top: 15px;
+	margin-left: 20px;
+	font-size: 18px;
+	line-height: 30px;
+}
+.singerInfo .singerGroup {
+	font-size: 18px;
+	font-weight: 700;
+}
+.pocaprice {
+	width: 421px;
+	height: 70px;
+	margin-top: 40px;
+}
+.pocaprice div {
+	width: 130px;
+	height: 70px;
+	float: left;
+}
+.pocaprice .maxbar {
+	width: 1px;
+	height: 60px;
+	margin: 5px 80px 0;
+	background-color: #8AAAE5;
+}
+.pocaprice span {
+	width: 130px;
+	height: 30px;
+	display: block;
+	line-height: 30px;
+	font-size: 18px;
+	font-weight: 700;
+	color: #999;
+}
+.pocaprice div span:last-child {
+	font-size: 22px;
+	color: #222;
+	margin-top: 10px;
+}
+.btn {
+	width: 510px;
+	height: 70px;
+	border-radius: 10px;
+	font-size: 22px;
+	font-weight: 700;
+	transition: box-shadow 0.2s ease;
+}
+.btn:hover {
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.buyNowBtn {
+	background-color: #fff;
+	border: 5px solid #8AAAE5;
+	margin-top: 40px;
+}
+.priceproposeBtn {
+	background-color: #8AAAE5;
+	margin-top: 10px;
+	color : #fff;
+}
+.history span {
+	display: block;
+	width: 250px;
+	height: 30px;
+	margin-top: 40px;
+	font-size: 25px;
+	font-weight: 700;
+}
+.historyTable {
+	width: 510px;
+	margin-top: 20px;
+	border-top: 1px solid #8AAAE5;
+	border-bottom: 1px solid #8AAAE5;
+}
+.historyTable tr {
+	width: 170px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
+}
+.historyTable tr:nth-child(2)>td:last-child {
+	color: #999;
+}
+.historyTable .historyTableTitle {
+	color: #999;
+	border-bottom: 1px solid #8AAAE5;
+}
+
+/* 부모 페이지로부터 넘겨받을 데이터 영역 */
+#pocaTitleValue {
+	width: 510px;
+	height: 80px;
+	display: block;
+	font-size: 30px;
+	font-weight: 700;
+	overflow-wrap: break-word;
+	resize: none;
+}
+#singerGroupValue {
+	display: block;
+	width: 130px;
+	height: 30px;
+	float: left;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 30px;
+}
+#singerNameValue {
+	display: block;
+	width: 130px;
+	height: 30px;
+	float: left;
+	font-size: 18px;
+	line-height: 30px;
+}
+#buyNowPriceValue, #maxPriceValue {
+	width: 130px;
+	height: 30px;
+	display: block;
+	line-height: 30px;
+	font-weight: 700;
+	font-size: 22px;
+	color: #222;
+}
+#singerGroupValue:disabled, #singerNameValue:disabled, #pocaTitleValue:disabled, #buyNowPriceValue:disabled, #maxPriceValue:disabled {
+	background-color: #fff;
+	color: #222;
+}
+#singerGroupValue:focus, #singerGroupValue:hover, 
+#singerNameValue:focus, #singerNameValue:hover,
+#pocaTitleValue:focus, #pocaTitleValue:hover,
+#buyNowPriceValue:focus, #buyNowPriceValue:hover,
+#maxPriceValue:focus, #maxPriceValue:hover {
+	outline: none;
+	cursor: default;
+}
+
+/* 푸터 */
+footer {
+	width: 100%;
+	height: 200px;
+	background-color: #8AAAE5;
+}

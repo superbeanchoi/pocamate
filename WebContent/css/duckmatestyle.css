@@ -1,0 +1,269 @@
+@charset "UTF-8";
+
+/* layout */
+
+/* 헤더 */
+
+/* wrap */
+.wrap {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+/* 메인이미지 */
+.topMain {
+	display: flex;
+	width: 100%;
+	height: 400px;
+	margin: 0 auto;
+	margin-top: 100px;
+	background-image: url("../img/duckmate topMain img.png");
+	background-size: cover;
+	background-position: 50% 50%;
+	overflow: hidden;
+	font-size: 40px;
+	color: #fff;
+	font-weight: 700;
+	line-height: 1.5;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+/* 메인 콘텐츠 */
+.contents {
+/* 	background-color: #ccc; */
+	width: 1100px;
+	margin: 0 auto;
+	flex-grow: 1;
+	padding-bottom: 140px;
+}
+
+/* 덕메이트 타이틀 */
+.duckmateTitleArea {
+	width: 100%;
+	height: 50px;
+	margin-top: 70px;
+}
+.duckmateTitleArea span {
+	width: 600px;
+	height: 50px;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 40px;
+	float: left;
+}
+.duckmateTitleArea button {
+	width: 182px;
+	height: 50px;
+	display: block;
+	float: right;
+	background-color: #8AAAE5;
+	color: #fff;
+	font-weight: 700;
+	border-radius: 10px;
+	transition: background-color 0.2s ease, border 0.2s ease, color 0.2s ease;
+}
+.duckmateTitleArea button:hover {
+	border: 2px solid #8AAAE5;
+	background-color: #fff;
+	color: #222;
+}
+
+/*스타 영역*/
+.duckmateStarArea {
+	width: 270px;
+	float: left;
+	margin-top: 70px;
+}
+.starsearch {
+	width: 270px;
+	height: 44px;
+	border-radius: 10px;
+	background-color: #eeeeee;
+	margin-bottom: 30px;
+}
+.starsearch label {
+	width: 20px;
+	height: 20px;
+	margin-top: 12px;
+	margin-left: 20px;
+	float: left;
+	cursor: pointer;
+}
+.starsearchtext {
+	width: 180px;
+	height: 24px;
+	background-color: #eeeeee;
+	margin: 10px 25px;
+	font-size: 17px;
+	color: #222;
+}
+.starsearchtext:focus {
+	outline: none;
+	cursor: text;
+}
+.starmoveup {
+	width: 110px;
+	height: 30px;
+	border-radius: 10px;
+	display: block;
+	margin: 40px auto 30px;
+}
+.duckmateStarAll {
+	display: block;
+	width: 250px !important;
+	height: 80px !important;
+	padding: 10px 0 10px 20px;
+}
+.duckmateStarlogo {
+	width: 250px;
+	height: 480px;
+	padding-left: 20px;
+	overflow: hidden;
+}
+.duckmateStarlogo ul {
+	display: block;
+}
+.duckmateStarlogo ul li {
+	display: block;
+	width: 250px;
+	height: 80px;
+	padding-top: 10px;
+}
+.duckmateStarlogo button {
+	width: 250px;
+	height: 60px;
+	display: block;
+}
+.duckmateStarlogo img {
+	width: 60px;
+	height: 60px;
+	display: block;
+	float: left;
+	border-radius: 30px;
+	transition: box-shadow 0.2s ease;
+}
+.duckmateStarlogo img:hover {
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.duckmateStarlogo span {
+	width: 170px;
+	height: 30px;
+	display: block;
+	float: left;
+	margin: 15px 0 15px 20px;
+	line-height: 30px;
+	text-align: left;
+	font-weight: 700;
+}
+.starmovedown {
+	width: 110px;
+	height: 30px;
+	border-radius: 10px;
+	display: block;
+	margin: 30px auto 0;
+}
+
+/*포스트 영역*/
+.duckmatePostArea {
+	width: 750px;
+	height: auto;
+	margin-top: 70px;
+	float: right;
+}
+.duckmatePost {
+	width: 750px;
+	height: 270px;
+	padding: 25px;
+	border-bottom: 2px solid #8AAAE5;
+}
+.duckmatePost a {
+	width: 700px;
+	height: 200px;
+}
+.postCategory {
+	width: 480px;
+	height: 30px;
+	font-size: 18px;
+	color: #999;
+}
+.postImg {
+	width: 220px;
+	height: 160px;
+}
+.postImg .img {
+	width: 160px;
+	height: 160px;
+	float: right;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.postImg img {
+	width: auto;
+	height: 100%;
+}
+.postTitle {
+	width: 480px;
+	height: 40px;
+	font-weight: 700;
+	text-overflow: ellipsis;
+}
+.postContents {
+	width:480px;
+	height: 100px;
+	text-align: left;
+	line-height: 1.5;
+}
+.postContents div {
+	width:480px;
+	height: 90px;
+	text-align: left;
+	line-height: 1.5;
+	overflow: hidden;
+}
+.postEtc {
+	width: 110px;
+	height: 32px;
+	font-weight: 18px;
+	line-height: 32px;
+	color: #999;
+	font-weight: 700;
+}
+.postEtc img {
+	width: 30px;
+	height: 30px;
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+.postDate {
+	text-align: right;
+	font-weight: 400;
+}
+.duckmatePostArea button {
+	display: block;
+	width: 750px;
+	height:50px;
+	margin: 0 auto;
+	margin-top: 70px;
+}
+.elsePost {
+	width: 750px;
+	height: auto;
+	margin-top: 70px;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	display: none;
+}
+
+/* 푸터 */
+footer {
+	width: 100%;
+	height: 200px;
+	background-color: #8AAAE5;
+}

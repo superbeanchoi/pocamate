@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 메타설정값, 반응형일때 PC버전과 모바일버전의 px 비율 사이즈를 똑같게 만들어주는 것 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<link href="../css/startstyle.css" rel="stylesheet" type="text/css">
+<link href="../css/headerstyle.css" rel="stylesheet" type="text/css">
+<link href="../css/pocarankstyle.css" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+<script type="text/javascript" src="../plugin/visualize.jQuery.js"></script>
+
+<script src="../js/pocarankjs.js"></script>
+<title>POCAMATE</title>
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<div id="header">
+				<div class="logo">
+					<a href="../index.html"><img src="../img/pocamate logo.png" alt="logo"/></a>
+				</div>
+				<div class="search clearheader">
+					<label for="searchtext"><img alt="search" src="../img/search icon.png"/></label>
+					<input type="text" placeholder="원하는 포토카드를 검색하세요" id="searchtext" class="searchtext"/>
+				</div>
+				<nav class="navi">
+					<ul class="mainNavi">
+	 					<li><a href="pocasearch.html">포카 검색</a></li>
+	 					<div class="menubar"></div>
+						<li><a href="pocarank.html">시세 확인</a></li>
+	 					<div class="menubar"></div>
+						<li><a href="duckmate.html">덕 메이트</a></li>
+					</ul>
+					<ul class="loginNavi">
+						<li class="loginbtn clearheader"><button>로그인</button></li>
+						<li class="newmembtn clearheader"><button>회원가입</button></li>
+						<li class="nickname"><span>잘생긴 토마토</span></li>
+						<li class="sir"><span>님</span></li>
+						<li class="profilebtn"><a href="mypage.html"><img alt="profile" src="../img/profile icon.png"/></a></li>
+					</ul>
+				</nav>
+			</div> <!-- header -->
+		</header>
+		<div class="topMain">
+				실시간 시세 확인하고<br/>합리적인 가격에 포토카드를 판매하고 구매하세요</span>
+		</div> <!-- topMain -->
+		<div class="contents">
+			<div class="tabmenu">
+				<button data-target="#pocarankArea" class="tabmenuCliked">포카별 시세</button>
+				<button data-target="#starrankArea">스타별 시세</button>
+			</div>
+			<div class="panelArea">
+				<div id="pocarankArea" class="pocarankArea rankArea">
+					<table id="pocarankdata" style="display: none;">  <!-- 사전 데이터 필수 -->
+						<thead>
+							<tr>
+								<td></td>
+								<th>aespa 카리나</th>
+								<th>EXO 백현</th>
+								<th>NCT 태용</th>
+								<th>IU 아이유</th>
+								<th>IVE 장원영</th>
+								<th>LE SSERAFIM 허윤진</th>
+								<th>SEVENTEEN 정한</th>
+								<th>BTS 뷔</th>
+								<th>BTS 정국</th>
+								<th>ASTRO 차은우</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Pink Christmas Random Pack Photo card</th>
+								<td>78000</td><td></td>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td></td><td></td>
+							</tr>
+							<tr>
+								<th>EXOcial Club - Cream Soda POPUP LUCKYDRAW</th>
+								<td></td><td>85000</td>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td></td><td></td>
+							</tr>
+							<tr>
+								<th>Chain Photo Card</th>
+								<td></td><td></td>
+								<td>99000</td><td></td>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td></td><td></td>
+							</tr>
+							<tr>
+								<th>The GOLDEN HOUR Concert MD Photo Card</th>
+								<td></td><td></td>
+								<td></td><td>110000</td>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td></td><td></td>
+							</tr>
+							<tr>
+								<th>I've IVE Photo Card</th>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td>125000</td><td></td>
+								<td></td><td></td>
+								<td></td><td></td>
+							</tr>
+							<tr>
+								<th>The First Moment of LE SSERAFIM Photo Card</th>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td></td><td>140000</td>
+								<td></td><td></td>
+								<td></td><td></td>
+							</tr>
+							<tr>
+								<th>헹가래[Heng:garæ] Photo Card</th>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td>148000</td><td></td>
+								<td></td><td></td>
+							</tr>
+							<tr>
+								<th>LOVE YOURSELF Tear ver.U Photo Card</th>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td></td><td>165000</td>
+								<td></td><td></td>
+							</tr>
+							<tr>
+								<th>ARMYPEDIA puzzle Photo card</th>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td>170000</td><td></td>
+							</tr>
+							<tr>
+								<th>All Night(전화해) 공개방송 Photo Card</th>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td></td><td>420000</td>
+							</tr>
+						</tbody>
+					</table> <!-- pocarankdata -->
+					<div id="pocarank-barchart" class="bar-chart"></div>
+					<table>
+						<tr>
+							<th>랭킹</th>
+							<th>포토카드</th>
+							<th>스타</th>
+							<th>평균 체결가</th>
+						</tr>
+						<tr>
+							<td class="rank"><div class="rankNum first">1</div></td>
+							<td class="pocarankCard">
+								<img src="../img/astro img.png"/>
+								<span>All Night(전화해) 공개방송 Photo Card</span>
+							</td>
+							<td class="pocarankSinger">
+								<img src="../img/astro logo.png"/>
+								<div class="singer">
+									<span>ASTRO</span>
+									<span>차은우</span>
+								</div>
+							</td>
+							<td class="rankPrice">420,000 원</td>
+						</tr>
+						<tr>
+							<td class="rank"><div class="rankNum second">2</div></td>
+							<td class="pocarankCard">
+								<img src="../img/bts jk img.png"/>
+								<span>ARMYPEDIA puzzle Photo card</span>
+							</td>
+							<td class="pocarankSinger">
+								<img src="../img/bts logo.png"/>
+								<div class="singer">
+									<span>BTS</span>
+									<span>정국</span>
+								</div>
+							</td>
+							<td class="rankPrice">170,000 원</td>
+						</tr>
+						<tr>
+							<td class="rank"><div class="rankNum third">3</div></td>
+							<td class="pocarankCard">
+								<img src="../img/bts v img.png"/>
+								<span>LOVE YOURSELF Tear ver.U Photo Card	</span>
+							</td>
+							<td class="pocarankSinger">
+								<img src="../img/bts logo.png"/>
+								<div class="singer">
+									<span>BTS</span>
+									<span>뷔</span>
+								</div>
+							</td>
+							<td class="rankPrice">165,000 원</td>
+						</tr>
+						<tr>
+							<td class="rank">4</td>
+							<td class="pocarankCard">
+								<img src="../img/seventeen img.png"/>
+								<span>헹가래[Heng:garæ] Photo Card</span>
+							</td>
+							<td class="pocarankSinger">
+								<img src="../img/seventeen logo.png"/>
+								<div class="singer">
+									<span>SEVENTEEN</span>
+									<span>정한</span>
+								</div>
+							</td>
+							<td class="rankPrice">148,000 원</td>
+						</tr>
+						<tr>
+							<td class="rank">5</td>
+							<td class="pocarankCard">
+								<img src="../img/lesserafim img.png"/>
+								<span>The First Moment of LE SSERAFIM Photo Card</span>
+							</td>
+							<td class="pocarankSinger">
+								<img src="../img/lesserafim logo.png"/>
+								<div class="singer">
+									<span>LE SSERAFIM</span>
+									<span>허윤진</span>
+								</div>
+							</td>
+							<td class="rankPrice">140,000 원</td>
+						</tr>
+						<tr>
+							<td class="rank">6</td>
+							<td class="pocarankCard">
+								<img src="../img/ive img.png"/>
+								<span>I've IVE Photo Card</span>
+							</td>
+							<td class="pocarankSinger">
+								<img src="../img/ive logo.png"/>
+								<div class="singer">
+									<span>IVE</span>
+									<span>장원영</span>
+								</div>
+							</td>
+							<td class="rankPrice">125,000 원</td>
+						</tr>
+						<tr>
+							<td class="rank">7</td>
+							<td class="pocarankCard">
+								<img src="../img/iu img.png"/>
+								<span>The GOLDEN HOUR Concert MD Photo Card</span>
+							</td>
+							<td class="pocarankSinger">
+								<img src="../img/iu logo.png"/>
+								<div class="singer">
+									<span>IU</span>
+									<span>아이유</span>
+								</div>
+							</td>
+							<td class="rankPrice">110,000 원</td>
+						</tr>
+						<tr>
+							<td class="rank">8</td>
+							<td class="pocarankCard">
+								<img src="../img/nct img.png"/>
+								<span>Chain Photo Card</span>
+							</td>
+							<td class="pocarankSinger">
+								<img src="../img/nct logo.png"/>
+								<div class="singer">
+									<span>NCT</span>
+									<span>태용</span>
+								</div>
+							</td>
+							<td class="rankPrice">99,000 원</td>
+						</tr>
+						<tr>
+							<td class="rank">9</td>
+							<td class="pocarankCard">
+								<img src="../img/exo img.png"/>
+								<span>EXOcial Club - Cream Soda POPUP LUCKYDRAW</span>
+							</td>
+							<td class="pocarankSinger">
+								<img src="../img/exo logo.png"/>
+								<div class="singer">
+									<span>EXO</span>
+									<span>백현</span>
+								</div>
+							</td>
+							<td class="rankPrice">85,000 원</td>
+						</tr>
+						<tr>
+							<td class="rank">10</td>
+							<td class="pocarankCard">
+								<img src="../img/aespa img.png"/>
+								<span>Pink Christmas Random Pack Photo card</span>
+							</td>
+							<td class="pocarankSinger">
+								<img src="../img/aespa logo.png"/>
+								<div class="singer">
+									<span>aespa</span>
+									<span>카리나</span>
+								</div>
+							</td>
+							<td class="rankPrice">78,000 원</td>
+						</tr>
+					</table>
+				</div> <!-- pocarankArea -->
+				<div id="starrankArea" class="starrankArea rankArea">
+					<table id="starrankdata" style="display: none;">  <!-- 사전 데이터 필수 -->
+						<thead>
+							<tr>
+								<td></td>
+								<th>Red Velvet 아이린</th>
+								<th>New Jeans 하니</th>
+								<th>EXO 백현</th>
+								<th>IVE 장원영</th>
+								<th>BTS 뷔</th>
+								<th>SEVENTEEN 정한</th>
+								<th>aespa 카리나</th>
+								<th>IU 아이유</th>
+								<th>BTS 정국</th>
+								<th>ASTRO 차은우</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Rookie Photo Card</th>
+								<td>55000</td><td></td>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td></td><td></td>
+							</tr>
+							<tr>
+								<th>The 2nd EP Get Up Photo Card</th>
+								<td></td><td>60000</td>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td></td><td></td>
+							</tr>
+							<tr>
+								<th>EXOcial Club - Cream Soda POPUP LUCKYDRAW</th>
+								<td></td><td></td>
+								<td>92000</td><td></td>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td></td><td></td>
+							</tr>
+							<tr>
+								<th>I've IVE Photo Card	</th>
+								<td></td><td></td>
+								<td></td><td>99000</td>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td></td><td></td>
+							</tr>
+							<tr>
+								<th>LOVE YOURSELF Tear ver.U Photo Card</th>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td>110000</td><td></td>
+								<td></td><td></td>
+								<td></td><td></td>
+							</tr>
+							<tr>
+								<th>헹가래[Heng:garæ] Photo Card</th>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td></td><td>130000</td>
+								<td></td><td></td>
+								<td></td><td></td>
+							</tr>
+							<tr>
+								<th>Pink Christmas Random Pack Photo card</th>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td>138000</td><td></td>
+								<td></td><td></td>
+							</tr>
+							<tr>
+								<th>The GOLDEN HOUR Concert MD Photo Card</th>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td></td><td>165000</td>
+								<td></td><td></td>
+							</tr>
+							<tr>
+								<th>ARMYPEDIA puzzle Photo card</th>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td>170000</td><td></td>
+							</tr>
+							<tr>
+								<th>All Night(전화해) 공개방송 Photo Card</th>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td></td><td></td>
+								<td></td><td>420000</td>
+							</tr>
+						</tbody>
+					</table> <!-- starrankdata -->
+					<div id="starrank-barchart" class="bar-chart"></div>
+					<table>
+						<tr>
+							<th>랭킹</th>
+							<th>스타</th>
+							<th>포토카드</th>
+							<th>평균 체결가</th>
+						</tr>
+						<tr>
+							<td class="rank"><div class="rankNum first">1</div></td>
+							<td class="starrankSinger">
+								<img src="../img/astro logo.png"/>
+								<span>ASTRO</span>
+								<span>차은우</span>
+							</td>
+							<td class="starrankCard">All Night(전화해) 공개방송 Photo Card</td>
+							<td class="rankPrice">420,000 원</td>
+						</tr>
+						<tr>
+							<td class="rank"><div class="rankNum second">2</div></td>
+							<td class="starrankSinger">
+								<img src="../img/bts logo.png"/>
+								<span>BTS</span>
+								<span>정국</span>
+							</td>
+							<td class="starrankCard">ARMYPEDIA puzzle Photo card</td>
+							<td class="rankPrice">170,000 원</td>
+						</tr>
+						<tr>
+							<td class="rank"><div class="rankNum third">3</div></td>
+							<td class="starrankSinger">
+								<img src="../img/iu logo.png"/>
+								<span>IU</span>
+								<span>아이유</span>
+							</td>
+							<td class="starrankCard">The GOLDEN HOUR Concert MD Photo Card</td>
+							<td class="rankPrice">165,000 원</td>
+						</tr>
+						<tr>
+							<td class="rank">4</td>
+							<td class="starrankSinger">
+								<img src="../img/aespa logo.png"/>
+								<span>aespa</span>
+								<span>카리나</span>
+							</td>
+							<td class="starrankCard">Pink Christmas Random Pack Photo card</td>
+							<td class="rankPrice">138,000 원</td>
+						</tr>
+						<tr>
+							<td class="rank">5</td>
+							<td class="starrankSinger">
+								<img src="../img/seventeen logo.png"/>
+								<span>SEVENTEEN</span>
+								<span>정한</span>
+							</td>
+							<td class="starrankCard">헹가래[Heng:garæ] Photo Card</td>
+							<td class="rankPrice">130,000 원</td>
+						</tr>
+						<tr>
+							<td class="rank">6</td>
+							<td class="starrankSinger">
+								<img src="../img/bts logo.png"/>
+								<span>BTS</span>
+								<span>뷔</span>
+							</td>
+							<td class="starrankCard">LOVE YOURSELF Tear ver.U Photo Card</td>
+							<td class="rankPrice">110,000 원</td>
+						</tr>
+						<tr>
+							<td class="rank">7</td>
+							<td class="starrankSinger">
+								<img src="../img/ive logo.png"/>
+								<span>IVE</span>
+								<span>장원영</span>
+							</td>
+							<td class="starrankCard">I've IVE Photo Card</td>
+							<td class="rankPrice">99,000 원</td>
+						</tr>
+						<tr>
+							<td class="rank">8</td>
+							<td class="starrankSinger">
+								<img src="../img/exo logo.png"/>
+								<span>EXO</span>
+								<span>백현</span>
+							</td>
+							<td class="starrankCard">EXOcial Club - Cream Soda POPUP LUCKYDRAW</td>
+							<td class="rankPrice">92,000 원</td>
+						</tr>
+						<tr>
+							<td class="rank">9</td>
+							<td class="starrankSinger">
+								<img src="../img/newjeans logo.png"/>
+								<span>New Jeans</span>
+								<span>하니</span>
+							</td>
+							<td class="starrankCard">The 2nd EP Get Up  Photo Card</td>
+							<td class="rankPrice">60,000 원</td>
+						</tr>
+						<tr>
+							<td class="rank">10</td>
+							<td class="starrankSinger">
+								<img src="../img/redvelvet logo.png"/>
+								<span>Red Velvet</span>
+								<span>아이린</span>
+							</td>
+							<td class="starrankCard">Rookie Photo Card</td>
+							<td class="rankPrice">55,000 원</td>
+						</tr>
+					</table>
+				</div> <!-- starrankArea -->
+			</div> <!-- panelArea -->
+		</div> <!-- contents -->
+		
+		<footer></footer>
+	</div> <!-- wrap -->
+</body>
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 메타설정값, 반응형일때 PC버전과 모바일버전의 px 비율 사이즈를 똑같게 만들어주는 것 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<link href="../css/startstyle.css" rel="stylesheet" type="text/css">
+<link href="../css/headerstyle.css" rel="stylesheet" type="text/css">
+<link href="../css/pocasearchstyle.css" rel="stylesheet" type="text/css">
+<link href="../css/popupstyle.css" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="../js/pocasearchjs.js"></script>
+<script src="../js/pocadetailOpenjs.js"></script>
+<title>POCAMATE</title>
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<div id="header">
+				<div class="logo">
+					<a href="../index.html"><img src="../img/pocamate logo.png" alt="logo"/></a>
+				</div>
+				<div class="search clearheader">
+					<label for="searchtext"><img alt="search" src="../img/search icon.png"/></label>
+					<input type="text" placeholder="원하는 포토카드를 검색하세요" id="searchtext" class="searchtext"/>
+				</div>
+				<nav class="navi">
+					<ul class="mainNavi">
+	 					<li><a href="pocasearch.html">포카 검색</a></li>
+	 					<div class="menubar"></div>
+						<li><a href="pocarank.html">시세 확인</a></li>
+	 					<div class="menubar"></div>
+						<li><a href="duckmate.html">덕 메이트</a></li>
+					</ul>
+					<ul class="loginNavi">
+						<li class="loginbtn clearheader"><button>로그인</button></li>						
+						<li class="newmembtn clearheader"><button>회원가입</button></li>
+						<li class="nickname"><span>잘생긴 토마토</span></li>
+						<li class="sir"><span>님</span></li>
+						<li class="profilebtn"><a href="mypage.html"><img alt="profile" src="../img/profile icon.png"/></a></li>
+					</ul>
+				</nav>
+			</div> <!-- header -->
+		</header>
+		
+		<div class="topMain">
+			<div class="topMainArea">
+				<span>내가 원하는 최애 스타의 포토카드를<br/>빠르게 검색하세요</span>
+				<div class="mainsearch">
+					<label for="mainsearchtext"><img alt="search" src="../img/search icon.png"/></label>
+					<input type="text" placeholder="원하는 포토카드를 검색하세요" id="mainsearchtext" class="mainsearchtext"/>
+					<button class="pocaSearchBtn">검색</button>
+				</div>
+			</div>
+		</div> <!-- topMain -->
+		
+		<div class="contents">
+			<div class="bigTitle">오늘의 🔥HOT POCA🔥</div>
+			<div class="pocaArea hot">
+				<ul>
+					<li><a href="#">
+						<img alt="NCT 태용 포토카드" src="../img/nct img.png" class="photocard"/>
+						<div class="singerinfo">
+							<img alt="NCT 로고" src="../img/nct logo.png" class="singerlogo"/>
+							<span>NCT</span>
+							<span>태용</span>
+						</div>
+						<div class="singeramount">
+							<span>즉시 거래가</span>
+							<span class="buyNowPrice">45,000 원</span>
+						</div>
+						<div class="singeramount">
+							<span>최고 제시가</span>
+							<span class="maxPrice">30,000 원</span>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<img alt="BTS 뷔 포토카드" src="../img/bts v img.png" class="photocard"/>
+						<div class="singerinfo">
+							<img alt="BTS 로고" src="../img/bts logo.png" class="singerlogo"/>
+							<span>BTS</span>
+							<span>뷔</span>
+						</div>
+						<div class="singeramount">
+							<span>즉시 거래가</span>
+							<span class="buyNowPrice">95,000 원</span>
+						</div>
+						<div class="singeramount">
+							<span>최고 제시가</span>
+							<span class="maxPrice">80,000 원</span>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<img alt="SEVENTEEN 정한 포토카드" src="../img/seventeen img.png" class="photocard"/>
+						<div class="singerinfo">
+							<img alt="SEVENTEEN 로고" src="../img/seventeen logo.png" class="singerlogo"/>
+							<span>SEVENTEEN</span>
+							<span>정한</span>
+						</div>
+						<div class="singeramount">
+							<span>즉시 거래가</span>
+							<span class="buyNowPrice">70,000 원</span>
+						</div>
+						<div class="singeramount">
+							<span>최고 제시가</span>
+							<span class="maxPrice">55,000 원</span>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<img alt="LE SSERAFIM 허윤진 포토카드" src="../img/lesserafim img.png" class="photocard"/>
+						<div class="singerinfo">
+							<img alt="LE SSERAFIM 로고" src="../img/lesserafim logo.png" class="singerlogo"/>
+							<span>LE SSERAFIM</span>
+							<span>허윤진</span>
+						</div>
+						<div class="singeramount">
+							<span>즉시 거래가</span>
+							<span class="buyNowPrice">50,000 원</span>
+						</div>
+						<div class="singeramount">
+							<span>최고 제시가</span>
+							<span class="maxPrice">35,000 원</span>
+						</div>
+					</a></li>
+				</ul>
+			</div> <!-- pocaArea -->
+			<div class="cutbar"></div> <!-- 구분선 -->
+			<div class="starArea">
+				<div class="showAllStarArea duckmateStarlogo">
+					<button class="showStarBtn showAllStarBtn"><img alt="전체보기" src="../img/allshow icon.png"/></button>
+					<span>전체보기</span>
+				</div>
+				<button class="movebtn moveLeft"><img alt="left" src="../img/left move off icon.png"/></button>
+				<div class="showStarArea">
+					<ul>
+						<li>
+							<button class="showStarBtn"><img alt="ASTRO" src="../img/astro logo.png"/></button>
+							<span>ASTRO</span>
+						</li>
+						<li>
+							<button class="showStarBtn"><img alt="aespa" src="../img/aespa logo.png"/></button>
+							<span>aespa</span>
+						</li>
+						<li>
+							<button class="showStarBtn"><img alt="BTS" src="../img/bts logo.png"/></button>
+							<span>BTS</span>
+						</li>
+						<li>
+							<button class="showStarBtn"><img alt="EXO" src="../img/exo logo.png"/></button>
+							<span>EXO</span>
+						</li>
+						<li>
+							<button class="showStarBtn"><img alt="IU" src="../img/iu logo.png"/></button>
+							<span>IU</span>
+						</li>
+						<li>
+							<button class="showStarBtn"><img alt="IVE" src="../img/ive logo.png"/></button>
+							<span>IVE</span>
+						</li>
+						<li>
+							<button class="showStarBtn"><img alt="LE SSERAFIM" src="../img/lesserafim logo.png"/></button>
+							<span>LE SSERAFIM</span>
+						</li>
+						<li>
+							<button class="showStarBtn"><img alt="NCT" src="../img/nct logo.png"/></button>
+							<span>NCT</span>
+						</li>
+						<li>
+							<button class="showStarBtn"><img alt="NewJeans" src="../img/newjeans logo.png"/></button>
+							<span>NewJeans</span>
+						</li>
+						<li>
+							<button class="showStarBtn"><img alt="Red Velvet" src="../img/redvelvet logo.png"/></button>
+							<span>Red Velvet</span>
+						</li>
+						<li>
+							<button class="showStarBtn"><img alt="SEVENTEEN" src="../img/seventeen logo.png"/></button>
+							<span>SEVENTEEN</span>
+						</li>
+					</ul>
+				</div>
+				<button class="movebtn moveRight"><img alt="rignt" src="../img/right move off icon.png"/></button>
+			</div> <!-- starArea -->
+			<div class="cutbar"></div> <!-- 구분선 -->
+			<div class="bigTitle">신규 업데이트 POCA 🔔</div>
+			<div class="pocaArea newpocaArea">
+				<ul>
+					<li class="lesserafim"><a href="#">
+						<img alt="LE SSERAFIM 허윤진 포토카드" src="../img/lesserafim img.png" class="photocard"/>
+						<div class="singerinfo">
+							<img alt="LE SSERAFIM 로고" src="../img/lesserafim logo.png" class="singerlogo"/>
+							<span>LE SSERAFIM</span>
+							<span>허윤진</span>
+						</div>
+						<div class="singeramount">
+							<span>즉시 거래가</span>
+							<span class="buyNowPrice">50,000 원</span>
+						</div>
+						<div class="singeramount">
+							<span>최고 제시가</span>
+							<span class="maxPrice">35,000 원</span>
+						</div>
+					</a></li>
+					<li class="seventeen"><a href="#">
+						<img alt="SEVENTEEN 정한 포토카드" src="../img/seventeen img.png" class="photocard"/>
+						<div class="singerinfo">
+							<img alt="SEVENTEEN 로고" src="../img/seventeen logo.png" class="singerlogo"/>
+							<span>SEVENTEEN</span>
+							<span>정한</span>
+						</div>
+						<div class="singeramount">
+							<span>즉시 거래가</span>
+							<span class="buyNowPrice">70,000 원</span>
+						</div>
+						<div class="singeramount">
+							<span>최고 제시가</span>
+							<span class="maxPrice">55,000 원</span>
+						</div>
+					</a></li>
+					<li class="iu"><a href="#">
+						<img alt="아이유 포토카드" src="../img/iu img.png" class="photocard"/>
+						<div class="singerinfo">
+							<img alt="아이유 로고" src="../img/iu logo.png" class="singerlogo"/>
+							<span>IU</span>
+							<span>아이유</span>
+						</div>
+						<div class="singeramount">
+							<span>즉시 거래가</span>
+							<span class="buyNowPrice">25,000 원</span>
+						</div>
+						<div class="singeramount">
+							<span>최고 제시가</span>
+							<span class="maxPrice">25,000 원</span>
+						</div>
+					</a></li>
+					<li class="astro"><a href="#">
+						<img alt="ASTRO 차은우 포토카드" src="../img/astro img.png" class="photocard"/>
+						<div class="singerinfo">
+							<img alt="ASTRO 로고" src="../img/astro logo.png" class="singerlogo"/>
+							<span>ASTRO</span>
+							<span>차은우</span>
+						</div>
+						<div class="singeramount">
+							<span>즉시 거래가</span>
+							<span class="buyNowPrice">30,000 원</span>
+						</div>
+						<div class="singeramount">
+							<span>최고 제시가</span>
+							<span class="maxPrice">15,000 원</span>
+						</div>
+					</a></li>
+					<li class="nct"><a href="#">
+						<img alt="NCT 태용 포토카드" src="../img/nct img.png" class="photocard"/>
+						<div class="singerinfo">
+							<img alt="NCT 로고" src="../img/nct logo.png" class="singerlogo"/>
+							<span>NCT</span>
+							<span>태용</span>
+						</div>
+						<div class="singeramount">
+							<span>즉시 거래가</span>
+							<span class="buyNowPrice">45,000 원</span>
+						</div>
+						<div class="singeramount">
+							<span>최고 제시가</span>
+							<span class="maxPrice">30,000 원</span>
+						</div>
+					</a></li>
+					<li class="newjeans"><a href="#">
+						<img alt="NewJeans 하니 포토카드" src="../img/newjeans img.png" class="photocard"/>
+						<div class="singerinfo">
+							<img alt="NewJeans 로고" src="../img/newjeans logo.png" class="singerlogo"/>
+							<span>NewJeans</span>
+							<span>하니</span>
+						</div>
+						<div class="singeramount">
+							<span>즉시 거래가</span>
+							<span class="buyNowPrice">15,000 원</span>
+						</div>
+						<div class="singeramount">
+							<span>최고 제시가</span>
+							<span class="maxPrice">15,000 원</span>
+						</div>
+					</a></li>
+					<li class="bts"><a href="#">
+						<img alt="BTS 뷔 포토카드" src="../img/bts v img.png" class="photocard"/>
+						<div class="singerinfo">
+							<img alt="BTS 로고" src="../img/bts logo.png" class="singerlogo"/>
+							<span>BTS</span>
+							<span>뷔</span>
+						</div>
+						<div class="singeramount">
+							<span>즉시 거래가</span>
+							<span class="buyNowPrice">95,000 원</span>
+						</div>
+						<div class="singeramount">
+							<span>최고 제시가</span>
+							<span class="maxPrice">80,000 원</span>
+						</div>
+					</a></li>
+					<li class="redvelvet"><a href="#">
+						<img alt="Red Velvet 아이린 포토카드" src="../img/redvelvet img.png" class="photocard"/>
+						<div class="singerinfo">
+							<img alt="Red Velvet 로고" src="../img/redvelvet logo.png" class="singerlogo"/>
+							<span>Red Velvet</span>
+							<span>아이린</span>
+						</div>
+						<div class="singeramount">
+							<span>즉시 거래가</span>
+							<span class="buyNowPrice">20,000 원</span>
+						</div>
+						<div class="singeramount">
+							<span>최고 제시가</span>
+							<span class="maxPrice">20,000 원</span>
+						</div>
+					</a></li>
+					<li class="ive"><a href="#">
+						<img alt="IVE 장원영 포토카드" src="../img/ive img.png" class="photocard"/>
+						<div class="singerinfo">
+							<img alt="IVE 로고" src="../img/ive logo.png" class="singerlogo"/>
+							<span>IVE</span>
+							<span>장원영</span>
+						</div>
+						<div class="singeramount">
+							<span>즉시 거래가</span>
+							<span class="buyNowPrice">30,000 원</span>
+						</div>
+						<div class="singeramount">
+							<span>최고 제시가</span>
+							<span class="maxPrice">15,000 원</span>
+						</div>
+					</a></li>
+					<li class="bts"><a href="#">
+						<img alt="BTS 정국 포토카드" src="../img/bts jk img.png" class="photocard"/>
+						<div class="singerinfo">
+							<img alt="BTS 로고" src="../img/bts logo.png" class="singerlogo"/>
+							<span>BTS</span>
+							<span>정국</span>
+						</div>
+						<div class="singeramount">
+							<span>즉시 거래가</span>
+							<span class="buyNowPrice">50,000 원</span>
+						</div>
+						<div class="singeramount">
+							<span>최고 제시가</span>
+							<span class="maxPrice">35,000 원</span>
+						</div>
+					</a></li>
+					<li class="aespa"><a href="#">
+						<img alt="aespa 카리나 포토카드" src="../img/aespa img.png" class="photocard"/>
+						<div class="singerinfo">
+							<img alt="aespa 로고" src="../img/aespa logo.png" class="singerlogo"/>
+							<span>aespa</span>
+							<span>카리나</span>
+						</div>
+						<div class="singeramount">
+							<span>즉시 거래가</span>
+							<span class="buyNowPrice">15,000 원</span>
+						</div> 
+						<div class="singeramount">
+							<span>최고 제시가</span>
+							<span class="maxPrice">15,000 원</span>
+						</div>
+					</a></li>
+					<li class="exo"><a href="#">
+						<img alt="EXO 백현 포토카드" src="../img/exo img.png" class="photocard"/>
+						<div class="singerinfo">
+							<img alt="EXO 로고" src="../img/exo logo.png" class="singerlogo"/>
+							<span>EXO</span>
+							<span>백현</span>
+						</div>
+						<div class="singeramount">
+							<span>즉시 거래가</span>
+							<span class="buyNowPrice">30,000 원</span>
+						</div>
+						<div class="singeramount">
+							<span>최고 제시가</span>
+							<span class="maxPrice">15,000 원</span>
+						</div>
+					</a></li>
+				</ul>
+			</div> <!-- pocaArea -->
+		</div> <!-- contents -->
+		<div class="popupBg">
+			<div class="comingSoonWrap popupWrap">
+				<div class="comingSooTitle popupTitle">COMING SOON</div>
+				<div class="popupBtnArea popupOneBtnArea">
+					<button class="cancellBtn popupBtn">확인</button>
+				</div>
+			</div> <!-- comingSoon -->
+		</div> <!-- popupBg -->
+		<footer>
+			<button class="pocaDown"><img alt="down" src="../img/down move off icon.png"/></button>
+			<div class="footer"></div>
+		</footer>
+	</div> <!-- wrap -->
+</body>
+</html>

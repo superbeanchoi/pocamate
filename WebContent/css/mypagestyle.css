@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+/* layout */
+
+/* 헤더 */
+
+/* wrap */
+.wrap {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+/* 메인 콘텐츠 */
+.contents {
+/* 	background-color: #ccc; */
+	width: 740px;
+	margin: 0 auto;
+	margin-top: 100px;
+	flex-grow: 1;
+	padding-bottom: 140px;
+}
+
+.mypagebar {
+	width: 740px;
+	height: 2px;
+	background-color: #8AAAE5;
+	margin: 30px 0;
+}
+
+.profileArea {
+	width: 690px;
+	height: 50px;
+	margin: 70px auto 0;
+}
+.profileImg {
+	margin-left: 25px;
+	float: left;
+}
+.profileArea span {
+	width: 300px;
+	height: 50px;
+	display: block;
+	float: left;
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 50px;
+	margin-left: 25px;
+}
+.profileArea button {
+	width:30px;
+	height: 30px;
+	display: block;
+	float: right;
+	margin: 10px 25px 0 0;
+}
+
+.payArea {
+	width: 700px;
+	height: 70px;
+	border-radius: 10px;
+	border: 2px solid #8AAAE5;
+	margin: 0 auto;
+}
+.walletImg {
+	margin: 18px 20px 18px 18px;
+	float: left;
+}
+.payArea span {
+	width: 280px;
+	height: 30px;
+	display: block;
+	float:left;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 30px;
+	margin: 18px 0;
+}
+.payArea .pay {
+	text-align: right;
+}
+.payArea button {
+	width:30px;
+	height: 30px;
+	display: block;
+	float: right;
+	margin: 18px 18px 18px 0;
+}
+.payArea button img {
+	width:30px;
+	height: 30px;
+}
+
+.collectionArea {
+	width: 700px;
+	height: 310px;
+	border-radius: 10px;
+	border: 2px solid #8AAAE5;
+	margin: 0 auto;
+}
+.collectionTitle>img {
+	margin-left: 18px;
+	float: left;
+}
+.collectionTitle {
+	width: 660px;
+	height: 30px;
+	margin: 18px auto 30px;
+}
+.collectionTitle span {
+	width: 300px;
+	height: 30px;
+	display:block;
+	float: left;
+	margin-left: 20px;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 30px;
+}
+.collectionTitle button {
+	width:30px;
+	height: 30px;
+	display: block;
+	float: right;
+}
+.collectionTitle button img {
+	width:30px;
+	height: 30px;
+}
+.collectionpoca {
+	width: 660px;
+	height: 210px;
+	margin: 0 auto;
+}
+.collectionpoca li {
+	display: block;
+	width: 150px;
+	height: 210px;
+	float: left;
+	border-radius: 10px;
+	overflow: hidden;
+	margin-right: 20px;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.collectionpoca li:last-child {
+	margin-right: 0px;
+}
+.collectionpoca li img {
+	width: 150px;
+	height: 210px;
+}
+.collectionpoca li button {
+	width: 150px;
+	height: 210px;
+	border: 2px solid #8AAAE5;
+	border-radius: 10px;
+	font-size: 50px;
+	font-weight: 700;
+	color: #8AAAE5;
+}
+
+.shopingArea {
+	width: 700px;
+	height: 200px;
+	margin: 0 auto;
+}
+.shopingTitle {
+	width: 350px;
+	height: 30px;
+}
+.shopingTitle img {
+	width: 30px;
+	height: 30px;
+	float: left;
+}
+.shopingTitle span {
+	width: 300px;
+	height: 30px;
+	display:block;
+	float: left;
+	margin-left: 20px;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 30px;
+}
+.shoping {
+	width: 700px;
+	height: 150px;
+	margin-top: 20px;
+	border-radius: 10px;
+	border: 2px solid #8AAAE5;
+	background-color: #fff;
+	padding: 30px 0;
+}
+.shoping ul {
+	width: 230px;
+	height: 90px;
+	float: left;
+}
+.shoping div {
+	width: 2px;
+	height: 90px;
+	float: left;
+	background-color: #8AAAE5;
+}
+.shoping ul li:first-child {
+	text-align: center;
+	line-height: 25px;
+	font-size: 18px;
+	font-weight: 700;
+	color: #999;
+}
+.shoping ul li:last-child {
+	text-align: center;
+	line-height: 40px;
+	font-size: 30px;
+	font-weight: 700;
+	color: #8AAAE5;
+	margin-top: 25px;
+}
+.selling {
+	background-color: #8AAAE5;
+}
+.selling div {
+	background-color: #eee;
+}
+.selling ul li:first-child {
+	color: #eee;
+}
+.selling ul li:last-child {
+	color: #fff;
+}
+
+/* 푸터 */
+footer {
+	width: 100%;
+	height: 200px;
+	background-color: #8AAAE5;
+}

@@ -1,0 +1,312 @@
+@charset "UTF-8";
+
+/* layout */
+
+/* 헤더 */
+
+/* wrap */
+.wrap {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+/* 서치 영역 */
+.topMain {
+	width: 100%;
+	height: 400px;
+	margin: 0 auto;
+	margin-top: 100px;
+	background-image: url("../img/pocasearch topMain img.png");
+	background-size: cover;
+	background-position: 50% 50%;
+	overflow: hidden;
+}
+.topMainArea {
+	width: 900px;
+	height: 206px;
+	margin-top: 97px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.topMainArea span {
+	width: 900px;
+	display: block;
+	font-size: 40px;
+	color: #fff;
+	font-weight: 700;
+	line-height: 1.5;
+	text-align: center;
+	cursor: default;
+}
+.mainsearch {
+	width: 680px;
+	height: 60px;
+	border-radius: 10px;
+	margin-top: 26px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #eeeeee;
+}
+.mainsearch label {
+	width: 30px;
+	height: 30px;
+	margin-top: 15px;
+	margin-left: 20px;
+	float: left;
+	cursor: pointer;
+}
+.mainsearch label img {
+	display: block;
+	width: 30px;
+	height: 30px;
+}
+.mainsearchtext {
+	width: 465px;
+	height: 30px;
+	background-color: #eeeeee;
+	margin-top: 15px;
+	margin-left: 20px;
+	margin-right: 25px;
+	font-size: 20px;
+	color: #222;
+}
+.mainsearchtext:focus {
+	outline: none;
+	cursor: text;
+}
+.mainsearch button {
+	width: 120px;
+	height: 60px;
+	display: block;
+	float: right;
+	background-color: #8AAAE5;
+	font-size: 20px;
+	font-weight: 700;
+	color: #fff;
+	border-radius: 0 10px 10px 0;
+	transition: background-color 0.2s ease, color 0.2s ease;
+}
+.mainsearch button:hover {
+	background-color: #fff;
+	color: #222;
+}
+
+/* 메인 콘텐츠 */
+.contents {
+/* 	background-color: #aeaeae; */
+	width: 1140px;
+	margin: 0 auto;
+	flex-grow: 1;
+	padding-bottom: 140px;
+}
+
+/* 타이틀 */
+.bigTitle {
+	display: block;
+	height: 48px;
+	font-size: 40px;
+	letter-spacing: -2px;
+	font-weight: 700;
+	margin-top: 70px;
+	cursor: default;
+}
+.cutbar {
+	width: 1140px;
+	height: 2px;
+	background-color: #8AAAE5;
+	margin-top: 70px;
+}
+
+/* 스타 선택 */
+.starArea {
+	width: 1140px;
+	height: 120px;
+	margin-top: 60px;
+}
+.movebtn {
+	float: left;
+	margin-top: 10px;
+	margin-left: 20px;	
+}
+.showAllStarArea {
+	float: left;
+	width: 170px;
+	height: 100px;
+	padding-top: 10px;
+}
+.showAllStarArea button {
+	display: block;
+	width: 60px;
+	height: 60px;
+	margin-left: 55px;
+	margin-right: 55px;
+	border-radius: 30px;
+	transition: box-shadow 0.2s ease;
+}
+.showAllStarArea button:hover {
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.showAllStarArea span {
+	display: block;
+	width: 170px;
+	height: 30px;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 22px;
+	font-weight: 700;
+	cursor: default;
+}
+.showStarArea {
+	display: block;
+	float: left;
+	width: 850px;
+	height: 120px;
+	margin-left: 20px;
+	padding-top: 10px;
+	overflow: hidden;
+}
+.showStarArea ul {
+	display: block;
+	float: left;
+	width: 1870px;
+	height: 110px;
+}
+.showStarArea ul li {
+	float: left;
+	width: 170px;
+	height: 110px;
+}
+.showStarArea ul li button{
+	display: block;
+	width: 60px;
+	height: 60px;
+	margin-left: 55px;
+	margin-right: 55px;
+	border-radius: 30px;
+	transition: box-shadow 0.2s ease;
+}
+.showStarArea ul li img {
+	width: auto;
+	height: auto;
+	border-radius: 30px;
+}
+.showStarArea ul li button:hover {
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.showStarArea ul li span {
+	display: block;
+	width: 170px;
+	height: 30px;
+	margin-top: 25px;
+	text-align: center;
+	font-size: 22px;
+	font-weight: 700;
+	cursor: default;
+}
+
+/* 포카 조회 */
+.pocaArea {
+	width: 1130px;
+	margin-left: 20px;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-left: 5px;
+}
+.hot {
+	height: 615px;
+}
+.hot .photocard {
+	border: 5px solid gold;
+}
+.pocaArea li {
+	margin-top: 70px;
+	width: 250px;
+	height: 540px;
+	float: left;
+	margin-right: 30px;
+}
+.pocaArea li .photocard {
+	display: block;
+	width: 250px;
+	height: 350px;
+	border-radius: 25px;
+	transition: box-shadow 0.2s ease;
+}
+.pocaArea li .photocard:hover {
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+/*     transform: scale(0.95); */
+}
+.pocaArea li .singerinfo {
+	float: right;
+	margin-top: 30px;
+	width: 250px;
+	height: 60px;
+	font-size: 22px;
+	font-weight: 700;
+	color: #000;
+}
+.pocaArea li .singerlogo {
+	float: left;
+	width: 60px;
+	height: 60px;
+	margin-right: 20px;
+}
+.pocaArea li .singerinfo span {
+	line-height: 30px;
+	width: 170px;
+	height: 30px;
+	float: left;
+}
+.pocaArea li .singerinfo span:last-child {
+	font-size: 18px;
+	font-weight: 400;
+}
+.pocaArea li .singeramount {
+	float: left;
+	margin-top: 20px;
+	width: 250px;
+	height: 30px;
+	font-size: 22px;
+	font-weight: 700;
+}
+.pocaArea li .singeramount span {
+	line-height: 30px;
+	width: 130px;
+	height: 30px;
+	float: left;
+	text-align: right;
+}
+.pocaArea li .singeramount span:first-child {
+	width: 100px;
+	font-size: 18px;
+	color: #999;
+	text-align: left;
+}
+.pocaArea li .singeramount span:after {
+	content: "";
+	width: 10px;
+	height: 18px;
+	background-color: #999;
+}
+
+.clearPoca {
+	display: none;
+}
+
+/* 푸터 */
+footer {
+	width: 100%;
+}
+footer button {
+	display: block;
+	width: 750px;
+	height:50px;
+	margin: 0 auto;
+	margin-bottom: 140px;
+}
+.footer {
+	width: 100%;
+	height: 200px;
+	background-color: #8AAAE5;
+}

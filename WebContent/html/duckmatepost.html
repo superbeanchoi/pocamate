@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 메타설정값, 반응형일때 PC버전과 모바일버전의 px 비율 사이즈를 똑같게 만들어주는 것 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<link href="../css/startstyle.css" rel="stylesheet" type="text/css">
+<link href="../css/headerstyle.css" rel="stylesheet" type="text/css">
+<link href="../css/duckmatepoststyle.css" rel="stylesheet" type="text/css">
+<link href="../css/popupstyle.css" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="../js/duckmatepostjs.js"></script>
+<title>POCAMATE</title>
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<div id="header">
+				<div class="logo">
+					<a href="../index.html"><img src="../img/pocamate logo.png" alt="logo"/></a>
+				</div>
+				<div class="search clearheader">
+					<label for="searchtext"><img alt="search" src="../img/search icon.png"/></label>
+					<input type="text" placeholder="원하는 포토카드를 검색하세요" id="searchtext" class="searchtext"/>
+				</div>
+				<nav class="navi">
+					<ul class="mainNavi">
+	 					<li><a href="pocasearch.html">포카 검색</a></li>
+	 					<div class="menubar"></div>
+						<li><a href="pocarank.html">시세 확인</a></li>
+	 					<div class="menubar"></div>
+						<li><a href="duckmate.html">덕 메이트</a></li>
+					</ul>
+					<ul class="loginNavi">
+						<li class="loginbtn clearheader"><button>로그인</button></li>
+						<li class="newmembtn clearheader"><button>회원가입</button></li>
+						<li class="nickname"><span>잘생긴 토마토</span></li>
+						<li class="sir"><span>님</span></li>
+						<li class="profilebtn"><a href="mypage.html"><img alt="profile" src="../img/profile icon.png"/></a></li>
+					</ul>
+				</nav>
+			</div> <!-- header -->
+		</header>
+
+		<div class="contents">
+			<div class="postCategory">
+				<span>덕 메이트</span>
+				<img class="postCategoryArrow" src="../img/post category arrow icon.png"/>
+				<img class="postCategorySingerImg" src="../img/ive logo.png"/>
+				<span class="postCategorySinger"><input id="postCategorySingerValue" value="IVE" disabled="disabled"/></span>
+			</div> <!-- postCategory -->
+			<div class="postTitle"><textarea id="postTitleValue" disabled="disabled">오늘 인기가요 원영이 너무 이뻤다ㅠㅠ</textarea></div>
+			<div class="postwriterArea">
+				<img src="../img/profile icon.png" class="postwriterProfile"/>
+				<span class="postwriterNickname">멋진 사자</span>
+				<div class="minpostbar"></div>
+				<span class="postDate"><input id="postDateValue" value="2024-02-05" disabled="disabled"/></span>
+				<button class="submenu"><img src="../img/submenu icon.png"/></button>
+			</div> <!-- postwriterArea -->
+			<div class="postbar"></div>
+			<div class="postMainImg"><img alt="POST 사진" src="../img/post main img.png" class="postMainImgArea"></div>
+			<div class="postContent">고양이 모자 너무 귀여웠는데 혹시 사진 더 줄 수 있는 사람?! 이번 앨범 헤어 진짜 다양해서 너무 행복해ㅠ</div>
+			<div class="postEtc">
+				<button><img src="../img/my collection off icon.png"></button>
+				<span class="postHeartNum">0</span>
+				<img src="../img/comment icon.png">
+				<span class="postCommentNum">1</span>
+			</div> <!-- postEtc -->
+			<div class="postbar"></div>
+			<div class="myComment">
+				<div class="writterProfile">
+					<a href="mypage.html"><img src="../img/profile icon.png"/></a>
+					<span class="mynickname">잘생긴 토마토</span>
+				</div>
+				<textarea placeholder="댓글을 남겨보세요" class="myCommentText"></textarea>
+				<button class="myCommentBtn">등록</button>
+			</div> <!-- myComment -->
+			<div class="postCommentAll">
+				<div class="postComment">
+					<div class="commentWritterArea">
+						<div class="writterProfile commentwritterProfile">
+							<img src="../img/profile icon.png"/>
+							<span>하얀 사과</span>
+						</div>
+						<span class="commentDate">2024-02-05 13:00</span>
+						<button class="commentsubmenu otherCommentsubmenu"><img src="../img/submenu icon.png"/></button>
+					</div>
+					<div class="postCommentText">대박이야 진짜...ㅠㅠㅠ</div>
+					<button class="commentDetailtBtn commentReportgoBtn">신고하기</button>
+				</div> <!-- postComment -->
+			</div> <!-- postCommentAll -->
+			<div class="postbar"></div>
+		</div> <!-- contents -->
+		<div class="popupBg">
+			<div class="commentReportPopupWrap popupWrap">
+				<div class="commentReportPopupTitle popupTitle">댓글을 신고하시겠습니까?</div>
+				<div class="popupBtnArea">
+					<button class="commentReportBtn okBtn popupBtn">확인</button>
+					<button class="cancellBtn popupBtn">취소</button>
+				</div>
+			</div> <!-- 댓글 신고 확인 -->
+			<div class="commentReportOKPopupWrap popupWrap">
+				<div class="commentReportOKPopupTitle popupTitle">댓글이 신고되었습니다.</div>
+				<div class="popupBtnArea popupOneBtnArea">
+					<button class="cancellBtn popupBtn">확인</button>
+				</div>
+			</div> <!-- 댓글 신고 완료 -->
+			<div class="commentDeletePopupWrap popupWrap">
+				<div class="commentDeletePopupTitle popupTitle">댓글을 삭제하시겠습니까?</div>
+				<div class="popupBtnArea">
+					<button class="commentDeleteBtn okBtn popupBtn">확인</button>
+					<button class="cancellBtn popupBtn">취소</button>
+				</div>
+			</div> <!-- 댓글 삭제 확인 -->
+			<div class="commentDeleteOKPopupWrap popupWrap">
+				<div class="commentDeleteOKPopupTitle popupTitle">댓글이 삭제되었습니다.</div>
+				<div class="popupBtnArea popupOneBtnArea">
+					<button class="cancellBtn popupBtn">확인</button>
+				</div>
+			</div> <!-- 댓글 삭제 완료 -->
+			<div class="comingSoonWrap popupWrap">
+				<div class="comingSooTitle popupTitle">COMING SOON</div>
+				<div class="popupBtnArea popupOneBtnArea">
+					<button class="cancellBtn popupBtn">확인</button>
+				</div>
+			</div> <!-- comingSoon -->
+		</div> <!-- popupBg -->
+		<footer></footer>
+	</div> <!-- wrap -->
+</body>
+</html>
