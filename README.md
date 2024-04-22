@@ -3,6 +3,7 @@
 <br>
 
 <strong>참여 인원</strong><span>&nbsp;&nbsp;&nbsp;&nbsp;개인 프로젝트</span><br>
+<strong>개발 기간</strong><span>&nbsp;&nbsp;&nbsp;&nbsp;2024.01.31 - 2024.02.14 (2주)</span><br>
 <strong>개발 툴</strong><span>&nbsp;&nbsp;&nbsp;&nbsp;Figma, Eclipse</span><br>
 <strong>개발 언어</strong><span>&nbsp;&nbsp;&nbsp;&nbsp;HTML5, CSS3, JavaScript, JQuery, Bootstap</span><br>
 <strong>개발 서버</strong><span>&nbsp;&nbsp;&nbsp;&nbsp;Apache Tomcat</span><br>
